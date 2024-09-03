@@ -24,10 +24,9 @@ for (int remaining = n / quarter; remaining >= 0; remaining--) {
             int n_temp2 = n_temp - (dime * new_remaining);  
                 for (int new_new_remaining = n_temp2 / nickel; new_new_remaining >= 0; new_new_remaining--) {
                     int n_temp3 = n_temp2 - (nickel * new_new_remaining);  
-                    printf("%d quarter(s) %d dime(s), %d nickel(s) %d pennie(s)\n", remaining, new_remaining, new_new_remaining, n_temp3);
+                    printf("%d quarter(s), %d dime(s), %d nickel(s), %d pennie(s)\n", remaining, new_remaining, new_new_remaining, n_temp3);
                }
            }
        }
-
        return 0;
    }
